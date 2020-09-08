@@ -1,4 +1,4 @@
-package com.sforits.Test.String;
+package com.sforits.Utils.String;
 
 import org.junit.Test;
 

@@ -1,6 +1,5 @@
-package com.sforits.Test.DateTime;
+package com.sforits.Utils.DateTime;
 
-import com.sforits.Utils.DateTime.StringTime;
 import org.junit.Test;
 
 /**

@@ -1,10 +1,12 @@
-package com.sforits.Test.Json;
+package com.sforits.Utils.Json;
 
 import com.sforits.entity.Book;
-import com.sforits.Utils.Json.JsonChange;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author：sforits

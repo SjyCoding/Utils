@@ -1,6 +1,5 @@
-package com.sforits.Test.String;
+package com.sforits.Utils.String;
 
-import com.sforits.Utils.String.MD5;
 import org.junit.Test;
 
 /**
