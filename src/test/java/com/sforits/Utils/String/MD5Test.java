@@ -10,6 +10,6 @@ import org.junit.Test;
 public class MD5Test {
     @Test
     public void m() {
-        System.out.println(MD5.code("1234"));
+//        System.out.println(MD5.code("1234"));
     }
 }
