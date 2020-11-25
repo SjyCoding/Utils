@@ -1,15 +1,8 @@
 package com.sforits.Utils.DateTime;
 
-import org.junit.Test;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * @Author：sforits
- * @E-mail：sforits@gmail.com
- * @Date：2020/6/6-9:17
- */
 
 /**
  * @Author：sforits

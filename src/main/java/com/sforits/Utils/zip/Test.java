@@ -13,13 +13,11 @@ public class Test {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        // TODO Auto-generated method stub
         //需要压缩的文件或目录的路径
-        File file = new File("D:/Test/list");
+        File file = new File("D:/Test/zip");
         if (file.canRead()) {
             //FileOutputStream的文件路径必须带后缀，不然会出现“文件无法访问的异常”
-            ZipOutputStream out = new ZipOutputStream(
-                    new FileOutputStream(file.getPath() + ".zip"));
+            ZipOutputStream out = new ZipOutputStream(new FileOutputStream(file.getPath() + ".zip"));
             //找到最后一个‘/’的位置，以便取出当前的文件名或目录名
             Zip(file.getPath(), file.getPath().lastIndexOf("//"), out);
             out.closeEntry();
@@ -46,7 +44,7 @@ public class Test {
             if (f.isDirectory()) {
                 //  去掉压缩根目录以上的路径串，一面ZIP文件中含有压缩根目录父目录的层次结构
                 String pathname = f.getPath().substring(baseindex + 1);
-                //  空目录也要新建哟个项
+                //  空目录也要新建一个项
                 out.putNextEntry(new ZipEntry(pathname + "/"));
                 //  递归
                 Zip(f.getPath(), baseindex, out);
@@ -56,8 +54,7 @@ public class Test {
                 // 新建项为一个文件
                 out.putNextEntry(new ZipEntry(pathname));
                 //  读文件
-                BufferedInputStream in = new BufferedInputStream(
-                        new FileInputStream(f));
+                BufferedInputStream in = new BufferedInputStream(new FileInputStream(f));
                 int c;
                 while ((c = in.read()) != -1)
                     out.write(c);
